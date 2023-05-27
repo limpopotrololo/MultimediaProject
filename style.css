@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background: white		;
+    flex: auto;
+    flex-direction: column;
+}
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background: white;
+    color: #FB8B24;
+    font-family: sans-serif,"Druk Wide";
+
+}
+header {
+    margin-top: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
+#tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#tabs > * {
+    display: inline-block;
+    margin: 0 20px;
+
+}
+img {
+    border: 5px solid #FB8B24;
+    border-radius: 10px;
+    padding: 3px;
+}
+.img-container img {
+    max-width: 300px;
+    max-height: 150px;
+}
+#player {
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0 #FB8B24 ;
+}
+
+.track-info {
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.track-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#play-btn {
+
+    background-image: url("images/play.png");
+
+}
+#next-btn {
+
+    background-image: url("images/next.png");
+
+}
+#prev-btn {
+    background-image: url("images/prev.png");
+
+}
+.btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: none;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+
+.btn:active {
+    transform: scale(1.3); 
+}
+
+
+#progress-bar{
+    background: #EFEFEF;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 4px;
+    width: 80%;
+}
+#progress{
+    background: #FB8B24;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 1ms linear;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    margin-top: 25px;
+}
